@@ -3,10 +3,23 @@ import streamlit.components.v1 as components
 st.set_page_config(layout="wide", page_title="CotWeed AI Console", initial_sidebar_state="collapsed")
 st.markdown("""
 <style> 
-    .stApp header {visibility: hidden;} 
-    .css-18ni7ap { display: none; }
-    /* Hide the sidebar completely for the true Stitch app experience */
+    /* Hide Streamlit completely */
+    header {visibility: hidden;} 
     [data-testid="collapsedControl"] { display: none; }
+    .stApp { background-color: #050811; }
+    
+    /* Force the iframe to absolute full screen */
+    iframe {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        z-index: 999999 !important;
+        border: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 components.html("""<!DOCTYPE html>
