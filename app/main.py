@@ -3,12 +3,9 @@ import streamlit.components.v1 as components
 st.set_page_config(layout="wide", page_title="CotWeed AI Console", initial_sidebar_state="collapsed")
 st.markdown("""
 <style> 
-    /* Hide Streamlit completely */
     header {visibility: hidden;} 
     [data-testid="collapsedControl"] { display: none; }
     .stApp { background-color: #050811; }
-    
-    /* Force the iframe to absolute full screen */
     iframe {
         position: fixed !important;
         top: 0 !important;
@@ -740,4 +737,28 @@ EXPORT JSON
   })();
 </script></main></div></body></html>
 
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll('a');
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const text = link.innerText.toLowerCase();
+            const dataPath = link.getAttribute('data-path') || '';
+            
+            // Map click targets to Streamlit URLs
+            let targetUrl = '/';
+            if (text.includes('roi') || dataPath.includes('roi') || text.includes('बचत') || text.includes('हिशोब')) {
+                targetUrl = '2_Analytics';
+            } else if (text.includes('machine view') || text.includes('operations') || text.includes('फवारणी') || dataPath.includes('operations-center')) {
+                targetUrl = '1_Ops_Center';
+            }
+            
+            // Navigate the parent window (since we are in an iframe)
+            window.top.location.href = targetUrl;
+        });
+    });
+});
+</script>
 """, height=1080, scrolling=True)
