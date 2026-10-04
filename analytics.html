@@ -1,559 +1,688 @@
 <!DOCTYPE html>
 
-<html lang="mr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"inverse-primary":"#79db8d","surface-container-high":"#eee7e3","outline-variant":"#becabc","on-tertiary-container":"#fff1eb","error-container":"#ffdad6","on-secondary-fixed":"#2f1500","on-primary-container":"#d3ffd5","tertiary-fixed":"#ffdbca","primary-fixed":"#95f8a7","on-background":"#1e1b19","inverse-surface":"#33302d","background":"#fff8f5","surface-bright":"#fff8f5","surface-variant":"#e9e1dd","on-error-container":"#93000a","on-secondary":"#ffffff","surface":"#fff8f5","surface-container":"#f4ece8","primary-container":"#15803d","on-error":"#ffffff","secondary":"#904d00","primary-fixed-dim":"#79db8d","on-secondary-fixed-variant":"#6e3900","outline":"#6f7a6e","on-tertiary-fixed-variant":"#763300","on-surface":"#1e1b19","inverse-on-surface":"#f7efeb","secondary-fixed-dim":"#ffb77d","on-primary":"#ffffff","surface-container-lowest":"#ffffff","on-tertiary-fixed":"#331200","secondary-fixed":"#ffdcc3","error":"#ba1a1a","surface-dim":"#e0d8d5","tertiary-container":"#b45309","on-tertiary":"#ffffff","secondary-container":"#fe932c","on-surface-variant":"#3f493f","surface-container-highest":"#e9e1dd","surface-tint":"#006d30","surface-container-low":"#faf2ee","tertiary-fixed-dim":"#ffb68e","on-primary-fixed-variant":"#005323","on-primary-fixed":"#00210a","tertiary":"#903f00","on-secondary-container":"#663500","primary":"#00652c"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"1rem","space-xs":"0.375rem","space-lg":"1.75rem","space-sm":"0.75rem","space-xl":"2.5rem","gutter":"1rem","space-md":"1.25rem"},"fontFamily":{"headline-lg-mobile":["Noto Sans"],"label-lg":["Noto Sans"],"headline-xl-mobile":["Noto Sans"],"headline-xl":["Noto Sans"],"label-md":["Noto Sans"],"body-lg":["Noto Sans"],"body-md":["Noto Sans"],"headline-lg":["Noto Sans"],"metric-display":["Noto Sans"],"body-sm":["Noto Sans"],"headline-md":["Noto Sans"]},"fontSize":{"headline-lg-mobile":["22px",{"lineHeight":"30px","fontWeight":"700"}],"label-lg":["16px",{"lineHeight":"22px","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"headline-xl":["36px",{"lineHeight":"44px","fontWeight":"700"}],"label-md":["14px",{"lineHeight":"18px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"500"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","fontWeight":"700"}],"metric-display":["32px",{"lineHeight":"38px","fontWeight":"800"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"500"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-20 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.06)] z-50"><div class="h-20 w-full px-4 lg:px-6 flex items-center justify-between gap-4"><div class="flex items-center gap-3 shrink-0"><img alt="Brand logo. - Primary color: #15803d - Font: geist - Mode: light - Roundness: rounded-md" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VIt6WEBMU-5flNke7LlRE0Z0T4bzgWxJ42CbHqhyGs2IuoCp7MiOXurElwOy1hfeHu_LuL0AxR6QyVRUqw3vNNUOYXc1KlJqW3A77comVnuRzQpcDcdpPPo9vu5UN1EJjZHuFkSrCPlRoApGXmNTDDo5I47ppx9iJkY8skocqslQEEfN9ZbGWTzWwlUanmB2P8Ya4QJP6AS1TkjhT1T6s1UipMdB2DibhLvYy3vLAzPwY1iGqrl1HEJ29t"/><div class="flex flex-col"><span class="font-headline-md text-headline-md font-bold text-primary tracking-tight leading-none">CotWeed किसान मित्र</span><span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">विदर्भ कॉटन स्मार्ट फवारणी (Vidarbha Cotton Smart Spray)</span></div></div><div class="hidden xl:flex items-center gap-3"><div class="flex items-center gap-2 bg-primary-container text-on-primary-container px-3.5 py-1.5 rounded-full shadow-[0_2px_4px_rgba(41,37,36,0.08)]"><span class="w-2.5 h-2.5 rounded-full bg-primary-fixed animate-pulse"></span><span class="font-label-md text-label-md font-bold">मशीन तयार आहे / Machine Ready &amp; Connected 🟢</span></div><div class="flex items-center gap-2 bg-surface-container-high text-on-surface px-3.5 py-1.5 rounded-full"><span class="material-symbols-outlined text-secondary text-[20px]">sunny</span><span class="font-label-md text-label-md">शेत: ब्लॉक ४-बी (Block 4-B) | हवामान: फवारणीसाठी अनुकूल (Safe 🌤️ 31°C)</span></div></div><div class="flex items-center gap-3 shrink-0"><div class="inline-flex items-center bg-surface-container rounded-full p-1 border border-outline-variant"><button class="px-3 py-1 rounded-full font-label-md text-label-md bg-primary text-on-primary font-bold shadow-[0_1px_4px_rgba(41,37,36,0.12)] transition-all" type="button">मराठी</button><button class="px-3 py-1 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" type="button">हिंदी</button><button class="px-3 py-1 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" type="button">English</button></div><a class="hidden sm:flex items-center gap-2 min-h-[44px] px-3.5 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md font-bold hover:bg-secondary hover:text-on-secondary shadow-[0_2px_4px_rgba(41,37,36,0.08)] transition-all" href="tel:18001801551"><span class="material-symbols-outlined text-[18px]">call</span><span>📞 किसान सहाय्य (Helpline)</span></a><div class="flex items-center gap-2 pl-2 border-l border-outline-variant"><img alt="Profile" class="w-10 h-10 rounded-full object-cover shadow-[0_2px_6px_rgba(41,37,36,0.1)]" src="https://lh3.googleusercontent.com/aida/AEtjO1V-dasiLmzERtPPJdYtz5OccMwAdT6qbvKltyacrTg4ihtf30veor_ZCoemWpYB_-ENMEhynMagAXJcTpjTmqIvMLpBnZg4i-VXlObmP1pLxpy4QtBFk8f_vapGaO2bAAvp7KZis6YdkMwL5pvznvkvcAAKK7uPU0ZMvOwGxX13DAjkIAFovECU1PNvIuFKOV8C1sWeyRC-Zv9upbetjpPSF1ek7zle01LNZlAE2dyjNJgnmbVc1tggGufR"/><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md font-bold text-on-surface leading-tight">दादाराव पवार</span><span class="font-body-sm text-body-sm text-on-surface-variant leading-none">शेतकरी (Farmer)</span></div></div></div></div></header><aside class="fixed left-0 top-20 bottom-0 w-72 bg-surface-container-low z-40 flex flex-col justify-between py-6 px-4 shadow-[0_4px_12px_rgba(41,37,36,0.06)] overflow-y-auto"><div class="space-y-4"><div class="px-2"><span class="font-label-md text-label-md font-bold uppercase tracking-wider text-secondary">शेती व यंत्रणा विभाग</span></div><nav class="space-y-2" data-active-classes="bg-primary text-on-primary font-bold shadow-[0_2px_4px_rgba(41,37,36,0.12)]"><a class="flex items-center min-h-[52px] px-4 py-3 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="live-spray-and-camera" href="#"><span class="material-symbols-outlined mr-3 text-2xl text-primary">agriculture</span><span>आजचे काम व फवारणी (Live Spray)</span></a><a aria-current="page" class="flex items-center min-h-[52px] px-4 py-3 rounded-xl transition-all bg-primary text-on-primary font-bold shadow-[0_2px_4px_rgba(41,37,36,0.12)]" data-path="money-saved-and-profits" href="#"><span class="material-symbols-outlined mr-3 text-2xl text-secondary">payments</span><span>पैशांची बचत व हिशोब (Savings)</span></a><a class="flex items-center min-h-[52px] px-4 py-3 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="govt-subsidy-and-receipts" href="#"><span class="material-symbols-outlined mr-3 text-2xl text-primary">receipt_long</span><span>सरकारी अनुदान व अहवाल (Subsidy)</span></a><a class="flex items-center min-h-[52px] px-4 py-3 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="machine-help-and-service" href="#"><span class="material-symbols-outlined mr-3 text-2xl text-tertiary-container">build_circle</span><span>मशीन तपासणी व मदत (Service)</span></a></nav></div><div class="bg-surface-container-highest rounded-xl p-4 shadow-[0_2px_4px_rgba(41,37,36,0.08)]"><div class="flex items-center gap-2 mb-2 text-secondary"><span class="material-symbols-outlined text-2xl">support_agent</span><span class="font-label-md text-label-md font-bold text-on-surface">मदत हवी आहे का? / Need Help?</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mb-3 leading-snug">यंत्रणेत बिघाड किंवा फवारणी मार्गदर्शनासाठी त्वरित संपर्क साधा.</p><a class="flex items-center justify-center gap-2 w-full min-h-[52px] px-4 py-2.5 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg font-bold shadow-[0_2px_4px_rgba(41,37,36,0.08)] hover:bg-primary-container hover:text-on-primary-container transition-all" href="tel:18001801551"><span class="material-symbols-outlined text-[20px]">phone_in_talk</span><span>1800-180-1551</span></a></div></aside><div class="pl-72"><main class="relative w-full pt-20 bg-background min-h-screen px-6 py-6"><div class="flex flex-col w-full">
-<!-- Voice Audio Assist Bar -->
-<div class="w-full bg-surface-container-high rounded-2xl p-4 mb-6 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
-<div class="flex items-center gap-3.5">
-<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm">
-<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">volume_up</span>
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=JetBrains+Mono:wght@100..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;background-color:#070b12;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}
+/* Custom high-tech slider styling */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 9999px;
+  background: #00ff88;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00ff88, 0 0 20px rgba(0,255,136,0.5);
+  border: 2px solid #06111f;
+}
+input[type=range]::-moz-range-thumb {
+  height: 18px;
+  width: 18px;
+  border-radius: 9999px;
+  background: #00ff88;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00ff88, 0 0 20px rgba(0,255,136,0.5);
+  border: 2px solid #06111f;
+}
+</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-dim":"#080C14","surface-panel":"#0B1320","surface-slate":"#0F172A","surface-container":"#121D33","surface-container-high":"#172640","surface-container-highest":"#1D2F4E","surface-bright":"#1e293b","inverse-surface":"#e0e2ea","inverse-on-surface":"#0f172a","surface-elevated":"#131F38","surface-container-low":"#0D1524","surface-container-lowest":"#070B12","primary":"#00ff88","primary-container":"#00e479","on-primary":"#00210c","primary-fixed":"#60ff99","secondary":"#00f0ff","secondary-container":"#00daf3","on-secondary":"#001f24","tertiary":"#fbbf24","tertiary-container":"#d97706","error":"#ff4365","error-container":"#93000a","outline":"#334e68","outline-variant":"#1e293b","on-surface":"#e2e8f0","on-surface-variant":"#94a3b8","background":"#070B12","surface":"#070B12","radar-amber":"#F59E0B","electric-mint":"#10B981","laser-danger":"#FF3366"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xxs":"0.125rem","space-xs":"0.25rem","space-sm":"0.5rem","space-md":"1rem","space-lg":"1.5rem","space-xl":"2rem","space-2xl":"3rem"},fontFamily:{"mono":["JetBrains Mono","monospace"],"label-sm":["JetBrains Mono"],"label-md":["JetBrains Mono"],"headline-sm":["JetBrains Mono"],"headline-md":["JetBrains Mono"],"headline-lg":["JetBrains Mono"],"telemetry-counter-md":["JetBrains Mono"],"telemetry-counter-lg":["JetBrains Mono"],"title-md":["JetBrains Mono"],"body-sm":["Geist","Inter","sans-serif"],"body-md":["Geist","Inter","sans-serif"],"body-lg":["Geist","Inter","sans-serif"]}}}}</script></head><body class="bg-[#070B12] font-body-md text-on-surface min-h-screen selection:bg-primary/20 selection:text-primary"><aside class="fixed left-0 top-0 h-full w-72 bg-[#090E17] border-r border-[#1B283E] z-50 flex flex-col justify-between shadow-[0_4px_30px_rgba(0,0,0,0.8)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm bg-[#0C1422] border-b border-[#1A263B]"><span class="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 border border-primary/30 text-primary font-mono shadow-[0_0_12px_rgba(0,255,136,0.25)]"><span class="material-symbols-outlined text-primary text-[20px]">precision_manufacturing</span></span><div class="flex flex-col"><span class="font-mono text-[9px] uppercase tracking-widest text-[#00ff88]/80 font-semibold">Actuation Unit</span><span class="font-mono text-[14px] font-bold text-slate-100 tracking-tight">Nagpur RISE v2.4</span></div></div><div class="px-space-md py-space-sm"><div class="font-mono text-[10px] uppercase tracking-widest text-slate-500 px-space-xs mb-space-xs font-semibold">Navigation Console</div><nav class="flex flex-col gap-space-xxs" data-active-classes="bg-primary/10 border border-primary/40 text-primary font-mono font-semibold shadow-[0_0_15px_rgba(0,255,136,0.15)]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-slate-400 hover:bg-[#121D31] hover:text-slate-200 transition-all font-mono text-[13px]" data-path="operations-center" href="#"><span class="material-symbols-outlined text-[19px]">satellite_alt</span><span class="font-body-md text-body-md">Operations Center</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg bg-primary/10 border border-primary/40 text-primary font-mono font-semibold shadow-[0_0_15px_rgba(0,255,136,0.15)] transition-all" data-path="field-economics-and-roi-analytics" href="#"><span class="material-symbols-outlined text-[19px] text-primary">bar_chart</span><span class="font-body-md text-body-md">Field Economics &amp; ROI</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-slate-400 hover:bg-[#121D31] hover:text-slate-200 transition-all font-mono text-[13px]" data-path="edge-and-nozzle-calibration" href="#"><span class="material-symbols-outlined text-[19px]">tune</span><span class="font-body-md text-body-md">Edge &amp; Nozzle Calibration</span></a></nav></div></div><div class="p-space-md m-space-sm rounded-xl bg-[#0C1524] border border-[#1E2E4A] shadow-[0_4px_20px_rgba(0,0,0,0.5)]"><div class="flex items-center justify-between mb-space-xs"><div class="flex items-center gap-space-xs"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary shadow-[0_0_8px_#00ff88]"></span></span><span class="font-mono text-[10px] uppercase font-bold tracking-wider text-slate-200">ESP32 Manifold</span></div><span class="font-mono text-[9px] px-1.5 py-0.5 rounded bg-primary/10 text-primary border border-primary/30 font-bold tracking-wider">CONNECTED</span></div><div class="space-y-space-xxs text-slate-400 font-mono text-[11px]"><div class="flex justify-between items-center"><span class="text-slate-500">Port:</span><span class="text-slate-200">/dev/ttyUSB0</span></div><div class="flex justify-between items-center"><span class="text-slate-500">Baud Rate:</span><span class="text-slate-200">115200</span></div><div class="flex justify-between items-center"><span class="text-slate-500">Jetson Orin:</span><span class="inline-flex items-center gap-1 text-tertiary"><span class="material-symbols-outlined text-[14px]">thermostat</span>41°C</span></div></div><div class="mt-space-xs pt-space-xxs border-t border-[#17243B] flex items-center justify-between text-slate-400 font-mono text-[10px]"><span class="text-slate-500">Subsystem Ping</span><span class="text-primary font-bold">1.2ms jitter-free</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-[#090E17]/90 backdrop-blur-xl border-b border-[#1A263B] z-40"><div class="h-16 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><img alt="CotWeed AI Precision Logo" class="h-8 w-auto object-contain filter drop-shadow-[0_0_8px_rgba(0,255,136,0.3)]" src="https://lh3.googleusercontent.com/aida/AEtjO1Vv6tGV739LLJH5hZPXlAiOaZ-WmrIGrOltlgCQBl9NbTwKYeUNGnYMe2SKIXsqsUAAtz2aOB3PWLRUP1fg41sXnqO-N24b3tUNHOR-dR3wttrpKfFRjH4z3aIuDm6uCTywhriJSU7BS_LkjnfrEAnNI-8HNcxad6gfruEsgdXXB6JydaEIPnv3T1ahx882UgsjinvwRpiFqClzMbmDKX53Oj1JeAydJEx9LA3LyeNtGRasEv8VAGu55UOY"/><span class="font-mono text-[16px] font-bold text-slate-100 tracking-tight">CotWeed<span class="text-primary">.AI</span></span></div><div class="inline-flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-[#0C1524] border border-primary/30 shadow-[0_0_10px_rgba(0,255,136,0.15)]"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span></span><span class="font-mono text-[10px] text-primary font-bold uppercase tracking-wider">EDGE ONLINE • 28 FPS</span></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 rounded-lg bg-[#0E1729] border border-[#1E2D48] text-slate-300 font-mono text-[11px]"><span class="material-symbols-outlined text-[16px] text-primary">potted_plant</span><span>Plot: <strong class="text-slate-100 font-semibold">Vidarbha Cotton Block-4B</strong></span><span class="text-slate-600">|</span><span>Crop: <strong class="text-secondary font-semibold">Bt-Cotton (V-4 Stage)</strong></span></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-space-xs px-space-sm py-1 rounded-lg bg-[#0E1729] border border-[#1E2D48] font-mono text-[11px] text-slate-300"><span class="material-symbols-outlined text-[16px] text-tertiary">air</span><span>Wind: <strong class="text-slate-100 font-semibold">14.2 km/h</strong> (<span class="text-primary font-semibold">Drift Safe 🟢</span>)</span><span class="text-slate-600">|</span><span>Temp: <strong class="text-slate-100 font-semibold">32°C</strong></span><span class="text-slate-600">|</span><span>RH: <strong class="text-slate-100 font-semibold">58%</strong></span></div><div class="inline-flex items-center p-0.5 rounded-lg bg-[#0C1422] border border-[#1A263B] font-mono text-[11px]"><button class="px-space-sm py-1 rounded-md bg-primary/20 text-primary border border-primary/40 font-semibold shadow-[0_0_8px_rgba(0,255,136,0.2)]" type="button">English</button><button class="px-space-sm py-1 text-slate-400 hover:text-slate-200 transition-colors" type="button">मराठी</button><button class="px-space-sm py-1 text-slate-400 hover:text-slate-200 transition-colors" type="button">हिंदी</button></div><div class="flex items-center gap-space-xs pl-space-xs border-l border-[#1A263B]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRKwZuCIikIR03sttLFD4-dU6EcRxWherqWqAXgucxnuu2yyderLktPSdKaTpOAaL2RTvbUaw14R6kOdYtA4N8Q8iUOGgdhJp1aT9beRamv075jR0OVnlXgrbbmG0oBD8pz-qyENDWJtK2-nQzIeZiGns9dXL1drHlkkcY1VFmJ_ARUtmK5NVqNCD5xza86KAVCpn8c2oGyfu80I6sq4zrnrRgwxkOg0MNu0F4zXQv9c0iON5kEYk_yQ"/><div class="hidden 2xl:flex flex-col text-left"><span class="font-mono text-[11px] text-slate-200 font-semibold">Er. David Ghen</span><span class="font-mono text-[9px] text-slate-400">Agronomist / Operator</span></div></div></div></div></header><main class="w-full pt-16 bg-[#070B12] min-h-screen text-slate-100"><div class="flex flex-col w-full">
+<!-- Sub-Header & Controls Filter Bar -->
+<section class="px-space-md lg:px-space-xl py-space-lg flex flex-col xl:flex-row xl:items-end justify-between gap-space-md border-b border-[#131F33]">
+<div class="space-y-space-xxs">
+<div class="flex items-center gap-space-xs text-primary font-mono text-[11px] uppercase tracking-wider font-semibold">
+<span class="material-symbols-outlined text-[16px]">finance_chip</span>
+<span>Agri-Fintech &amp; Sustainable Actuation Audit</span>
+<span class="text-slate-600">/</span>
+<span class="text-secondary font-mono tracking-widest">CCEA-AP-2024</span>
 </div>
-<div>
-<h2 class="font-headline-md text-headline-md text-on-surface font-bold leading-tight">हिशोब ऐका (Voice Narration)</h2>
-<p class="font-body-sm text-body-sm text-on-surface-variant">तुमच्या शेतात आजपर्यंत एकूण किती बचत झाली हे मराठीत ऐकण्यासाठी दाबा.</p>
+<h1 class="font-mono text-[28px] font-bold text-slate-100 tracking-tight flex items-center gap-3">
+  Field Economics &amp; ROI Analytics
+  <span class="font-mono text-[11px] px-2 py-0.5 rounded bg-primary/10 border border-primary/30 text-primary font-medium tracking-normal">TELEMETRY SYNCED</span>
+</h1>
+<p class="font-body-md text-body-md text-slate-400 max-w-3xl">
+  Financial modeling, chemical reduction audit &amp; environmental impact metrics for Vidarbha Cotton Cultivators (Nagpur RISE Cohort).
+</p>
 </div>
+<!-- Quick Filters & Compliance Action -->
+<div class="flex flex-wrap items-center gap-space-xs sm:gap-space-sm bg-[#0B1320] border border-[#1A2942] p-1.5 rounded-xl shadow-lg">
+<div class="relative flex items-center bg-[#070C15] border border-[#1E2E49] rounded-lg px-space-sm py-1.5 text-slate-200">
+<span class="material-symbols-outlined text-primary text-[18px] mr-1.5">grid_view</span>
+<select class="bg-transparent font-mono text-[11px] text-slate-200 outline-none cursor-pointer pr-space-sm">
+<option class="bg-[#0B1320] text-slate-200">Plot: Vidarbha Block-4B (42 Acres)</option>
+<option class="bg-[#0B1320] text-slate-200">Plot: Wardha South Block-2A (28 Acres)</option>
+<option class="bg-[#0B1320] text-slate-200">Plot: Hingna River Plot-1C (50 Acres)</option>
+</select>
 </div>
-<div class="flex items-center gap-2.5 w-full sm:w-auto">
-<button class="w-full sm:w-auto min-h-[52px] px-6 py-2 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-md active:translate-y-0.5 transition-transform" id="voiceBtn" onclick="toggleSpeech()" type="button">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">play_circle</span>
-<span>मराठीत ऐका (Listen)</span>
+<div class="relative flex items-center bg-[#070C15] border border-[#1E2E49] rounded-lg px-space-sm py-1.5 text-slate-200">
+<span class="material-symbols-outlined text-tertiary text-[18px] mr-1.5">calendar_month</span>
+<select class="bg-transparent font-mono text-[11px] text-slate-200 outline-none cursor-pointer pr-space-sm">
+<option class="bg-[#0B1320] text-slate-200">Season: Kharif 2024</option>
+<option class="bg-[#0B1320] text-slate-200">Season: Rabi 2023-24</option>
+<option class="bg-[#0B1320] text-slate-200">Cumulative: 3-Year Aggregate</option>
+</select>
+</div>
+<button class="inline-flex items-center gap-1.5 bg-gradient-to-r from-primary to-emerald-400 hover:from-primary hover:to-primary text-black font-mono font-bold text-[12px] px-space-sm py-2 rounded-lg transition-all shadow-[0_0_15px_rgba(0,255,136,0.3)] active:scale-95 cursor-pointer" id="exportPdfBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span>Export Compliance PDF</span>
 </button>
-<div class="px-3 py-2 rounded-xl bg-surface-container-highest text-on-surface font-label-md text-label-md">
-<span>हंगाम २०२४-२५</span>
+</div>
+</section>
+<!-- SECTION 1: Top-Level KPI Summary (4 Cards) -->
+<section class="px-space-md lg:px-space-xl pt-space-lg pb-space-lg">
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- KPI 1 -->
+<div class="relative overflow-hidden bg-[#0C1524] border border-[#1E304F] hover:border-primary/50 rounded-xl p-space-md shadow-[0_4px_20px_rgba(0,0,0,0.5)] transition-all hover:-translate-y-0.5 group">
+<div class="absolute -top-12 -right-12 w-28 h-28 bg-primary/10 rounded-full blur-2xl group-hover:bg-primary/20 transition-all"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-mono text-[10px] uppercase text-slate-400 tracking-wider font-semibold">Chemical Savings</span>
+<span class="w-8 h-8 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shadow-[0_0_10px_rgba(0,255,136,0.2)]">
+<span class="material-symbols-outlined text-[18px]">currency_rupee</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-mono text-[28px] font-bold text-primary tracking-tight drop-shadow-[0_0_12px_rgba(0,255,136,0.4)]">₹ 1,84,320</span>
+</div>
+<div class="mt-space-xs flex items-center gap-1.5 font-mono text-[11px]">
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-primary/20 border border-primary/40 text-primary font-bold">
+  +82.6%
+</span>
+<span class="text-slate-400 font-body-sm text-[12px]">vs blanket broadcast spray</span>
+</div>
+<div class="w-full bg-[#121E33] h-1.5 rounded-full mt-3 overflow-hidden border border-[#1B2B45]">
+<div class="bg-gradient-to-r from-primary to-emerald-400 h-full rounded-full shadow-[0_0_8px_#00ff88]" style="width: 82.6%"></div>
 </div>
 </div>
-</div>
-<!-- Hero Top Summary Metrics Cards (High Contrast, Bold, Sun-proof) -->
-<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
-<!-- Card 1: Rupee Savings -->
-<div class="bg-primary text-on-primary rounded-2xl p-5 shadow-md flex flex-col justify-between relative overflow-hidden">
-<div class="absolute -right-4 -bottom-4 w-28 h-28 bg-white/10 rounded-full pointer-events-none"></div>
-<div>
-<div class="flex items-center justify-between gap-2 mb-3">
-<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/20 text-on-primary font-label-md text-label-md font-bold">
-<span class="material-symbols-outlined text-[18px]">verified</span>
-            ८२% औषध वाचले
-          </span>
-<span class="material-symbols-outlined text-[32px] text-primary-fixed" style="font-variation-settings: 'FILL' 1;">savings</span>
-</div>
-<p class="font-label-lg text-label-lg text-on-primary-container font-semibold">आजची एकूण खिशातली बचत</p>
-<p class="font-metric-display text-metric-display font-extrabold tracking-tight mt-1 text-white">₹ १,८४,३२०</p>
-</div>
-<div class="mt-4 pt-3 bg-black/10 -mx-5 -mb-5 px-5 py-3">
-<p class="font-body-sm text-body-sm text-on-primary-container leading-tight">
-          फक्त तणावर फवारणी झाली; संपूर्ण शेतात औषध वाया गेले नाही. (Targeted Spray)
-        </p>
-</div>
-</div>
-<!-- Card 2: Medicine Saved -->
-<div class="bg-surface-container-lowest text-on-surface rounded-2xl p-5 shadow-md flex flex-col justify-between">
-<div>
-<div class="flex items-center justify-between gap-2 mb-3">
-<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md font-bold">
+<!-- KPI 2 -->
+<div class="relative overflow-hidden bg-[#0C1524] border border-[#1E304F] hover:border-secondary/50 rounded-xl p-space-md shadow-[0_4px_20px_rgba(0,0,0,0.5)] transition-all hover:-translate-y-0.5 group">
+<div class="absolute -top-12 -right-12 w-28 h-28 bg-secondary/10 rounded-full blur-2xl group-hover:bg-secondary/20 transition-all"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-mono text-[10px] uppercase text-slate-400 tracking-wider font-semibold">Herbicide Avoided</span>
+<span class="w-8 h-8 rounded-lg bg-secondary/10 border border-secondary/30 flex items-center justify-center text-secondary shadow-[0_0_10px_rgba(0,240,255,0.2)]">
 <span class="material-symbols-outlined text-[18px]">water_drop</span>
-            ४ पट कमी वापर
-          </span>
-<span class="material-symbols-outlined text-[32px] text-secondary" style="font-variation-settings: 'FILL' 1;">science</span>
+</span>
 </div>
-<p class="font-label-lg text-label-lg text-on-surface-variant font-semibold">वाचलेले तणनाशक (Chemical Saved)</p>
-<p class="font-metric-display text-metric-display font-extrabold tracking-tight mt-1 text-on-surface">३४२ लिटर</p>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-mono text-[28px] font-bold text-secondary tracking-tight drop-shadow-[0_0_12px_rgba(0,240,255,0.4)]">342.5</span>
+<span class="font-mono text-[14px] text-slate-400 font-semibold">Litres</span>
 </div>
-<div class="mt-4 pt-3 bg-surface-container -mx-5 -mb-5 px-5 py-3">
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
-          जमिनीमध्ये रसायनांचे प्रमाण घटले, मातीचा पोत व कस टिकून राहिला.
-        </p>
+<div class="mt-space-xs flex items-center gap-1.5 font-mono text-[11px]">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-secondary/20 border border-secondary/40 text-secondary font-bold">
+<span class="material-symbols-outlined text-[13px]">compost</span> Bio-Safe
+</span>
+<span class="text-slate-400 font-body-sm text-[12px]">Prevents soil toxicity buildup</span>
+</div>
+<div class="w-full bg-[#121E33] h-1.5 rounded-full mt-3 overflow-hidden border border-[#1B2B45]">
+<div class="bg-secondary h-full rounded-full shadow-[0_0_8px_#00f0ff]" style="width: 87.4%"></div>
 </div>
 </div>
-<!-- Card 3: Diesel & Tractor Time -->
-<div class="bg-surface-container-lowest text-on-surface rounded-2xl p-5 shadow-md flex flex-col justify-between">
-<div>
-<div class="flex items-center justify-between gap-2 mb-3">
-<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md font-bold">
+<!-- KPI 3 -->
+<div class="relative overflow-hidden bg-[#0C1524] border border-[#1E304F] hover:border-tertiary/50 rounded-xl p-space-md shadow-[0_4px_20px_rgba(0,0,0,0.5)] transition-all hover:-translate-y-0.5 group">
+<div class="absolute -top-12 -right-12 w-28 h-28 bg-tertiary/10 rounded-full blur-2xl group-hover:bg-tertiary/20 transition-all"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-mono text-[10px] uppercase text-slate-400 tracking-wider font-semibold">Carbon &amp; Runoff</span>
+<span class="w-8 h-8 rounded-lg bg-tertiary/10 border border-tertiary/30 flex items-center justify-center text-tertiary shadow-[0_0_10px_rgba(251,191,36,0.2)]">
+<span class="material-symbols-outlined text-[18px]">eco</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-mono text-[28px] font-bold text-tertiary tracking-tight drop-shadow-[0_0_12px_rgba(251,191,36,0.3)]">614</span>
+<span class="font-mono text-[14px] text-slate-400 font-semibold">kg CO₂e</span>
+</div>
+<div class="mt-space-xs flex items-center gap-1.5 font-mono text-[11px]">
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-tertiary/20 border border-tertiary/40 text-tertiary font-bold">
+  NABARD
+</span>
+<span class="text-slate-400 font-body-sm text-[12px]">Verified Green Ag Credit</span>
+</div>
+<div class="w-full bg-[#121E33] h-1.5 rounded-full mt-3 overflow-hidden border border-[#1B2B45]">
+<div class="bg-tertiary h-full rounded-full shadow-[0_0_8px_#fbbf24]" style="width: 74%"></div>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="relative overflow-hidden bg-[#0C1524] border border-[#1E304F] hover:border-primary/50 rounded-xl p-space-md shadow-[0_4px_20px_rgba(0,0,0,0.5)] transition-all hover:-translate-y-0.5 group">
+<div class="absolute -top-12 -right-12 w-28 h-28 bg-emerald-500/10 rounded-full blur-2xl group-hover:bg-emerald-500/20 transition-all"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-mono text-[10px] uppercase text-slate-400 tracking-wider font-semibold">Machine Operating Time</span>
+<span class="w-8 h-8 rounded-lg bg-emerald-400/10 border border-emerald-400/30 flex items-center justify-center text-primary shadow-[0_0_10px_rgba(0,255,136,0.2)]">
 <span class="material-symbols-outlined text-[18px]">speed</span>
-            ट्रॅक्टर बचत
-          </span>
-<span class="material-symbols-outlined text-[32px] text-tertiary" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+</span>
 </div>
-<p class="font-label-lg text-label-lg text-on-surface-variant font-semibold">वाचलेला वेळ व डिझेल</p>
-<p class="font-metric-display text-metric-display font-extrabold tracking-tight mt-1 text-on-surface">१८४ तास / ₹ १२,५००</p>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-mono text-[28px] font-bold text-slate-100 tracking-tight">184.2</span>
+<span class="font-mono text-[14px] text-slate-400 font-semibold">hrs</span>
 </div>
-<div class="mt-4 pt-3 bg-surface-container -mx-5 -mb-5 px-5 py-3">
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
-          फवारणीचे कमी फेरे आणि मजुरीच्या रोजंदारी खर्चात थेट रोख बचत.
-        </p>
+<div class="mt-space-xs flex items-center gap-1.5 font-mono text-[11px]">
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-[#15233A] border border-[#213554] text-slate-200 font-bold">
+  4.8 km/h
+</span>
+<span class="text-slate-400 font-body-sm text-[12px]">Optimal solenoid spray duty</span>
+</div>
+<div class="w-full bg-[#121E33] h-1.5 rounded-full mt-3 overflow-hidden border border-[#1B2B45]">
+<div class="bg-gradient-to-r from-emerald-500 to-primary h-full rounded-full shadow-[0_0_8px_#00ff88]" style="width: 92%"></div>
 </div>
 </div>
-<!-- Card 4: Crop Safety -->
-<div class="bg-surface-container-lowest text-on-surface rounded-2xl p-5 shadow-md flex flex-col justify-between">
+</div>
+</section>
+<!-- SECTION 2: Chemical Consumption Comparison (Broadcast vs. CotWeed AI Precision) -->
+<section class="px-space-md lg:px-space-xl pb-space-lg">
+<div class="bg-[#0B1320] border border-[#1A2942] rounded-xl p-space-md lg:p-space-lg shadow-[0_4px_30px_rgba(0,0,0,0.5)]">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-md border-b border-[#142033]">
 <div>
-<div class="flex items-center justify-between gap-2 mb-3">
-<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-md text-label-md font-bold">
-<span class="material-symbols-outlined text-[18px]">spa</span>
-            उत्कृष्ट दर्जा
-          </span>
-<span class="material-symbols-outlined text-[32px] text-primary" style="font-variation-settings: 'FILL' 1;">psychiatry</span>
-</div>
-<p class="font-label-lg text-label-lg text-on-surface-variant font-semibold">पिकांचे १००% संरक्षण</p>
-<p class="font-metric-display text-metric-display font-extrabold tracking-tight mt-1 text-on-surface">शून्य शॉक (No Shock)</p>
-</div>
-<div class="mt-4 pt-3 bg-surface-container -mx-5 -mb-5 px-5 py-3">
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
-          कापसाच्या कोवळ्या पानांवर तणनाशक उडाले नाही, पात्यांची गळती टळली.
-        </p>
-</div>
-</div>
-</div>
-<!-- Visual Field & Comparison Bento Section -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-8">
-<!-- Left: Before / After Comparison -->
-<div class="lg:col-span-8 bg-surface-container-lowest rounded-2xl p-6 shadow-md flex flex-col justify-between">
-<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-5">
-<div>
-<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">थेट तुलना / Real Field Comparison</span>
-<h3 class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1">जुनी पद्धत विरुद्ध कॉटवीड स्मार्ट पद्धत</h3>
-</div>
-<div class="flex items-center gap-2 bg-surface-container-high px-3.5 py-1.5 rounded-full self-start sm:self-auto">
-<span class="w-3 h-3 rounded-full bg-primary"></span>
-<span class="font-label-md text-label-md font-bold text-on-surface">४० एकर कापूस शेत (विदर्भ)</span>
-</div>
-</div>
-<!-- Comparative Panels -->
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-2">
-<!-- Old Way -->
-<div class="bg-surface-container rounded-xl p-5 flex flex-col justify-between">
-<div>
-<div class="flex items-center justify-between mb-3">
-<span class="px-2.5 py-1 rounded bg-error-container text-on-error-container font-label-md text-label-md font-bold">
-                ⚠️ जुनी पद्धत (पारंपारिक)
-              </span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">१००% औषध फवारणी</span>
-</div>
-<!-- Visual representation bar -->
-<div class="w-full bg-error-container h-8 rounded-lg mb-4 flex items-center px-3 relative overflow-hidden">
-<div class="w-full bg-error/30 h-full absolute inset-0"></div>
-<span class="relative font-label-md text-label-md font-bold text-on-error-container flex items-center gap-1">
-<span class="material-symbols-outlined text-[18px]">grain</span>
-                संपूर्ण शेतात रसायनांचा पूर
-              </span>
-</div>
-<ul class="space-y-2.5 font-body-sm text-body-sm text-on-surface mb-4">
-<li class="flex items-start gap-2">
-<span class="material-symbols-outlined text-error text-[20px] shrink-0">close</span>
-<span>एकूण औषध खर्च: <strong>₹ २,२३,०००</strong></span>
-</li>
-<li class="flex items-start gap-2">
-<span class="material-symbols-outlined text-error text-[20px] shrink-0">close</span>
-<span>कापसाच्या रोपांना औषधाचा झटका, वाढ खुंटली</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="material-symbols-outlined text-error text-[20px] shrink-0">close</span>
-<span>जमिनीतील गांडूळ व जिवाणूंचे नुकसान</span>
-</li>
-</ul>
-</div>
-<div class="p-3 bg-surface-container-high rounded-lg text-center">
-<p class="font-label-md text-label-md text-on-surface-variant font-medium">नुकसान व अतिरिक्त खर्च</p>
-<p class="font-headline-md text-headline-md text-error font-extrabold">+ ₹ १,८४,३२० जास्त खर्च</p>
-</div>
-</div>
-<!-- Smart CotWeed Way -->
-<div class="bg-primary/5 rounded-xl p-5 flex flex-col justify-between shadow-sm relative overflow-hidden">
-<div class="absolute top-2 right-2">
-<span class="material-symbols-outlined text-primary/20 text-[80px] pointer-events-none select-none">thumb_up</span>
-</div>
-<div>
-<div class="flex items-center justify-between mb-3">
-<span class="px-2.5 py-1 rounded bg-primary text-on-primary font-label-md text-label-md font-bold">
-                ✨ कॉटवीड पद्धत (स्मार्ट कॅमेरा)
-              </span>
-<span class="font-label-md text-label-md text-primary font-bold">फक्त १८% औषध वापर</span>
-</div>
-<!-- Visual representation bar -->
-<div class="w-full bg-surface-container-high h-8 rounded-lg mb-4 flex items-center relative overflow-hidden">
-<div class="w-[18%] bg-primary h-full flex items-center justify-center text-on-primary font-bold text-xs">
-                १८%
-              </div>
-<span class="px-3 font-label-md text-label-md font-bold text-primary">
-                केवळ तणावर थेट स्प्रे (Spot Spray)
-              </span>
-</div>
-<ul class="space-y-2.5 font-body-sm text-body-sm text-on-surface mb-4">
-<li class="flex items-start gap-2">
-<span class="material-symbols-outlined text-primary text-[20px] shrink-0 font-bold">check_circle</span>
-<span>एकूण औषध खर्च: <strong>₹ ३८,६८०</strong></span>
-</li>
-<li class="flex items-start gap-2">
-<span class="material-symbols-outlined text-primary text-[20px] shrink-0 font-bold">check_circle</span>
-<span>कापूस १००% सुरक्षित, बोंडांची निरोगी वाढ</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="material-symbols-outlined text-primary text-[20px] shrink-0 font-bold">check_circle</span>
-<span>मातीचा पोत शुद्ध, पुढच्या हंगामात भरपूर पीक</span>
-</li>
-</ul>
-</div>
-<div class="p-3 bg-primary text-on-primary rounded-lg text-center shadow-sm">
-<p class="font-label-md text-label-md text-on-primary-container font-semibold">खिशात शिल्लक राहिलेली रोख</p>
-<p class="font-headline-md text-headline-md text-white font-extrabold">₹ १,८४,३२० रोख बचत</p>
-</div>
-</div>
-</div>
-<!-- Field Photo Visual with AI bounding boxes illustration -->
-<div class="mt-4 relative rounded-xl overflow-hidden shadow-sm">
-<img class="w-full h-44 object-cover" data-alt="Clear high-contrast photograph of green healthy cotton crop rows in Vidarbha black soil under natural warm morning sun. An agricultural smart sprayer operates in background, with visible transparent AI detection bounding boxes selectively targeting tiny green weeds between cotton plants while avoiding the cotton crop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk9Jacb4Hw4zBHcWkh3mBRu-gu-HR3MPiAJ59cpF80Q_ToFedl1NU__CsqUoEQTXONLM9dzY2jo29KyW_mibSQqWFneAMmJUyiGLmGSoGtfEBat0XEV6EzaWI7d8CFoS-pGcb8HVe-4kqtKTQ9vpGwYGS5OHU7jJA27W8EYSKh0msO2Yl-qbN3G3hmJgYjkqxSpLtSM7im9sYLyepobkoYLKj5pAfKXuBIGSZyYX8DNWzORu3nMEaGXg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-4">
-<div class="flex items-center justify-between w-full text-white">
 <div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary-fixed">center_focus_strong</span>
-<span class="font-label-md text-label-md font-bold">कॉटवीड AI कॅमेरा: फक्त तण ओळखून नोझल चालू करते</span>
+<h2 class="font-mono text-[18px] font-bold text-slate-100 tracking-tight">Chemical Ingestion &amp; Dispersion Telemetry</h2>
+<span class="px-2 py-0.5 rounded bg-primary/10 border border-primary/30 text-primary font-mono text-[10px] font-bold uppercase tracking-wider shadow-[0_0_8px_rgba(0,255,136,0.2)]">Live Delta Audit</span>
 </div>
-<span class="font-body-sm text-body-sm bg-white/20 px-2.5 py-1 rounded-full backdrop-blur-sm">०.०२ सेकंद प्रतिसाद वेळ</span>
+<p class="font-body-sm text-body-sm text-slate-400 mt-1">
+  Continuous real-time flowmeter readings vs calibrated baseline across intra-row weed nodes.
+</p>
 </div>
-</div>
-</div>
-</div>
-<!-- Right: Quick Farmer Calculator Widget -->
-<div class="lg:col-span-4 bg-surface-container-low rounded-2xl p-6 shadow-md flex flex-col justify-between">
-<div>
-<div class="flex items-center gap-2 text-secondary mb-2">
-<span class="material-symbols-outlined text-[24px]">calculate</span>
-<span class="font-label-md text-label-md font-bold uppercase tracking-wider">नफा गणकयंत्र (Calculator)</span>
-</div>
-<h3 class="font-headline-md text-headline-md font-bold text-on-surface">तुमच्या शेताचा हिशोब काढा</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 mb-5">
-          तुमचे क्षेत्र निवडा आणि एका हंगामात होणारी एकूण बचत ताबडतोब पाहा.
-        </p>
-<!-- Acre Selector Buttons -->
-<div class="mb-4">
-<label class="block font-label-md text-label-md font-bold text-on-surface mb-2">तुमचे कापूस शेत किती एकर आहे?</label>
-<div class="grid grid-cols-2 gap-2 mb-3">
-<button class="acre-btn min-h-[52px] rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg font-bold transition-all shadow-sm hover:bg-surface-container-high" onclick="setAcre(5, this)" type="button">५ एकर (5 Acre)</button>
-<button class="acre-btn min-h-[52px] rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg font-bold transition-all shadow-sm hover:bg-surface-container-high" onclick="setAcre(10, this)" type="button">१० एकर (10 Acre)</button>
-<button class="acre-btn min-h-[52px] rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold transition-all shadow-sm" onclick="setAcre(25, this)" type="button">२५ एकर (25 Acre)</button>
-<button class="acre-btn min-h-[52px] rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg font-bold transition-all shadow-sm hover:bg-surface-container-high" onclick="setAcre(50, this)" type="button">५० एकर (50 Acre)</button>
-</div>
-<!-- Acre Slider -->
-<div class="bg-surface-container-lowest p-3 rounded-xl shadow-inner">
-<div class="flex justify-between items-center mb-1">
-<span class="font-body-sm text-body-sm text-on-surface-variant">किंवा हाताने एकर निवडा:</span>
-<span class="font-headline-md text-headline-md font-extrabold text-primary" id="sliderValueText">२५ एकर</span>
-</div>
-<input class="w-full accent-primary h-3 bg-surface-container-high rounded-lg cursor-pointer" id="acreSlider" max="100" min="2" oninput="onSliderChange(this.value)" step="1" type="range" value="25"/>
-</div>
-</div>
-<!-- Chemical Cost Reference -->
-<div class="bg-surface-container-lowest p-3.5 rounded-xl mb-5 flex items-center justify-between">
-<div class="flex items-center gap-2.5">
-<span class="material-symbols-outlined text-tertiary">water_drop</span>
-<div>
-<p class="font-label-md text-label-md font-bold text-on-surface">तणनाशक अंदाजे भाव</p>
-<p class="font-body-sm text-body-sm text-on-surface-variant">सरासरी बाजारभाव</p>
-</div>
-</div>
-<span class="font-label-lg text-label-lg font-extrabold text-on-surface">₹ १,८५० / लिटर</span>
-</div>
-<!-- Calculated Live Result Box -->
-<div class="bg-primary text-on-primary rounded-xl p-4 shadow-md mb-4">
-<span class="font-label-md text-label-md font-bold text-primary-fixed uppercase tracking-wider">हंगामात निव्वळ बचत</span>
-<p class="font-headline-xl text-headline-xl font-extrabold text-white mt-0.5" id="savingsDisplay">₹ २,३८,७५०</p>
-<div class="mt-2 pt-2 bg-white/10 flex items-center justify-between text-on-primary-container">
-<span class="font-body-sm text-body-sm">मशीन खर्च भरून निघेल:</span>
-<span class="font-label-md text-label-md font-bold text-white">फक्त ३८ दिवसांत!</span>
-</div>
-</div>
-</div>
-<!-- Action Button -->
-<button class="w-full min-h-[52px] px-4 py-3 rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-md hover:bg-secondary-container hover:text-on-secondary-container active:translate-y-0.5 transition-all" onclick="downloadQuotation()" type="button">
-<span class="material-symbols-outlined">download</span>
-<span>बँक व अनुदानासाठी कोटेशन घ्या (Estimate)</span>
+<!-- Metric Metric Switcher -->
+<div class="inline-flex items-center p-1 rounded-lg bg-[#070C15] border border-[#1E2E49] font-mono text-[11px]">
+<button class="chart-tab-btn px-space-sm py-1.5 rounded-md bg-primary/20 text-primary border border-primary/40 font-bold shadow-[0_0_10px_rgba(0,255,136,0.2)] transition-all cursor-pointer" id="toggleLitres" type="button">
+  Litres per Acre
+</button>
+<button class="chart-tab-btn px-space-sm py-1.5 rounded-md text-slate-400 hover:text-slate-200 transition-all cursor-pointer" id="toggleCost" type="button">
+  Cost in INR (₹) per Acre
+</button>
+<button class="chart-tab-btn px-space-sm py-1.5 rounded-md text-slate-400 hover:text-slate-200 transition-all cursor-pointer" id="toggleRunoff" type="button">
+  Runoff Index
 </button>
 </div>
 </div>
-<!-- Government Subsidy Scheme Banner & Visual Tracker -->
-<div class="w-full bg-surface-container-lowest rounded-2xl p-6 shadow-md mb-8">
-<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-6">
-<div class="flex items-start sm:items-center gap-3.5">
-<div class="w-14 h-14 rounded-2xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0 shadow-sm">
-<span class="material-symbols-outlined text-[34px]">account_balance</span>
+<!-- Graph & Metrics Bento Split -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center pt-space-md">
+<!-- SVG Interactive Telemetry Chart -->
+<div class="lg:col-span-8 bg-[#070D18] border border-[#16253C] rounded-xl p-space-md flex flex-col justify-between shadow-inner">
+<div class="flex items-center justify-between text-slate-400 font-mono text-[11px] mb-2">
+<div class="flex flex-wrap items-center gap-4">
+<span class="flex items-center gap-1.5">
+<span class="w-3 h-0.5 border-t-2 border-dashed border-red-500 inline-block"></span>
+<span class="text-red-400">Broadcast Standard (8.50 L/Acre)</span>
+</span>
+<span class="flex items-center gap-1.5">
+<span class="w-3 h-2 rounded-sm bg-primary inline-block shadow-[0_0_6px_#00ff88]"></span>
+<span class="text-primary font-bold">CotWeed AI Precision (1.48 L/Acre)</span>
+</span>
 </div>
+<span class="font-mono text-slate-500 text-[10px] tracking-wider">VIDARBHA 42-ACRE TRACK LOG</span>
+</div>
+<!-- The SVG Chart -->
+<div class="relative w-full h-64">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 700 240">
+<defs>
+<!-- Area gradient for CotWeed AI Savings -->
+<lineargradient id="savingsGradient" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#00ff88" stop-opacity="0.35"></stop>
+<stop offset="100%" stop-color="#00ff88" stop-opacity="0.0"></stop>
+</lineargradient>
+<pattern height="40" id="gridPattern" patternunits="userSpaceOnUse" width="70">
+<path d="M 70 0 L 0 0 0 40" fill="none" stroke="#132035" stroke-width="1"></path>
+</pattern>
+<filter height="140%" id="glow" width="140%" x="-20%" y="-20%">
+<fegaussianblur result="blur" stddeviation="3"></fegaussianblur>
+<femerge>
+<femergenode in="blur"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+</defs>
+<!-- Grid -->
+<rect fill="url(#gridPattern)" height="200" width="700"></rect>
+<!-- Baseline: Blanket broadcast (8.5 L/Acre) - dashed red line -->
+<line opacity="0.85" stroke="#ef4444" stroke-dasharray="6,4" stroke-width="2" x1="0" x2="700" y1="42" y2="42"></line>
+<text class="font-mono text-[11px] font-bold" fill="#f87171" text-anchor="end" x="690" y="36">8.50 L/Acre Baseline (Broadcast)</text>
+<!-- Dynamic Area fill between CotWeed spray line & 200px bottom -->
+<path d="M 0,182 Q 70,170 140,176 T 280,185 T 420,172 T 560,180 T 700,174 L 700,200 L 0,200 Z" fill="url(#savingsGradient)" id="chartArea"></path>
+<!-- Precision Line -->
+<path d="M 0,182 Q 70,170 140,176 T 280,185 T 420,172 T 560,180 T 700,174" fill="none" filter="url(#glow)" id="chartLine" stroke="#00ff88" stroke-linecap="round" stroke-width="3"></path>
+<!-- Actuation Pulse Hotspots -->
+<g class="cursor-pointer">
+<circle cx="140" cy="176" fill="#00ff88" r="5" stroke="#06111f" stroke-width="2"></circle>
+<circle class="animate-ping" cx="140" cy="176" fill="#00ff88" opacity="0.6" r="9"></circle>
+</g>
+<g class="cursor-pointer">
+<circle cx="420" cy="172" fill="#00ff88" r="5" stroke="#06111f" stroke-width="2"></circle>
+<circle class="animate-ping" cx="420" cy="172" fill="#00ff88" opacity="0.6" r="9"></circle>
+</g>
+<g class="cursor-pointer">
+<circle cx="560" cy="180" fill="#00ff88" r="5" stroke="#06111f" stroke-width="2"></circle>
+</g>
+<!-- X-Axis Labels -->
+<text class="font-mono text-[11px]" fill="#64748b" x="10" y="222">Zone A (Acre 1-7)</text>
+<text class="font-mono text-[11px]" fill="#64748b" x="175" y="222">Zone B (Acre 8-14)</text>
+<text class="font-mono text-[11px]" fill="#64748b" x="350" y="222">Zone C (Acre 15-28)</text>
+<text class="font-mono text-[11px]" fill="#64748b" x="525" y="222">Zone D (Acre 29-35)</text>
+<text class="font-mono text-[11px]" fill="#64748b" text-anchor="end" x="690" y="222">Zone E (Acre 36-42)</text>
+</svg>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-slate-400 font-mono text-[11px] border-t border-[#132035] mt-2">
+<span class="inline-flex items-center gap-1 text-primary font-bold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+  Targeting: Amaranthus &amp; Cyperus Rotundus
+</span>
+<span class="font-mono text-slate-500">Real-time Solenoid Response: <strong class="text-primary font-semibold">18ms</strong></span>
+</div>
+</div>
+<!-- Breakdown List & Field Insights -->
+<div class="lg:col-span-4 flex flex-col justify-between space-y-space-md">
+<div class="bg-[#0C1524] border border-[#1E304F] p-space-md rounded-xl space-y-space-sm shadow-sm">
+<div class="font-mono text-[10px] uppercase text-slate-400 tracking-wider font-semibold">Efficiency Partitioning</div>
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between text-body-sm font-mono">
+<span class="text-slate-200 flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary shadow-[0_0_6px_#00f0ff]"></span>
+  Crop Canopy Spared
+</span>
+<span class="font-mono font-bold text-secondary">82.6%</span>
+</div>
+<div class="w-full bg-[#121E33] h-2 rounded-full overflow-hidden border border-[#1B2B45]">
+<div class="bg-secondary h-full rounded-full shadow-[0_0_6px_#00f0ff]" style="width: 82.6%"></div>
+</div>
+<p class="font-body-sm text-body-sm text-slate-400">Preserves cotton foliage health and prevents vegetative stunting.</p>
+</div>
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex items-center justify-between text-body-sm font-mono">
+<span class="text-slate-200 flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary shadow-[0_0_6px_#fbbf24]"></span>
+  Weed Target Coverage
+</span>
+<span class="font-mono font-bold text-tertiary">17.4%</span>
+</div>
+<div class="w-full bg-[#121E33] h-2 rounded-full overflow-hidden border border-[#1B2B45]">
+<div class="bg-tertiary h-full rounded-full shadow-[0_0_6px_#fbbf24]" style="width: 17.4%"></div>
+</div>
+<p class="font-body-sm text-body-sm text-slate-400">Solenoid pulses actuated strictly on sub-centimeter weed centroids.</p>
+</div>
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex items-center justify-between text-body-sm font-mono">
+<span class="text-slate-200 flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary shadow-[0_0_6px_#00ff88]"></span>
+  Drift Loss Mitigated
+</span>
+<span class="font-mono font-bold text-primary">-94.0%</span>
+</div>
+<div class="w-full bg-[#121E33] h-2 rounded-full overflow-hidden border border-[#1B2B45]">
+<div class="bg-primary h-full rounded-full shadow-[0_0_6px_#00ff88]" style="width: 94%"></div>
+</div>
+<p class="font-body-sm text-body-sm text-slate-400">Zero droplet dispersion beyond 35mm actuation radius.</p>
+</div>
+</div>
+<!-- Agronomic Impact Callout -->
+<div class="p-space-md rounded-xl bg-[#0C1524] border border-[#1E304F] text-slate-200 space-y-space-xs relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-20 h-20 bg-primary/10 rounded-full blur-xl"></div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">psychology_alt</span>
+<span class="font-mono text-[13px] font-bold text-primary">Agronomist Audit Note</span>
+</div>
+<p class="font-body-sm text-body-sm text-slate-300 italic">
+  "By eliminating 7.02 litres/acre of unnecessary active chemical runoff, soil microbial activity index increased by +34% in Block-4B."
+</p>
+<div class="text-[10px] font-mono text-slate-500 uppercase font-semibold">Dr. V. Rao, ICAR-CICR Nagpur</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: Interactive Farm Size & ROI Payback Calculator -->
+<section class="px-space-md lg:px-space-xl pb-space-lg">
+<div class="bg-[#0B1320] border border-[#1A2942] rounded-xl p-space-md lg:p-space-lg shadow-[0_4px_30px_rgba(0,0,0,0.5)]">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between pb-space-md gap-space-xs border-b border-[#142033]">
 <div>
-<div class="flex flex-wrap items-center gap-2">
-<span class="px-2.5 py-0.5 rounded-full bg-secondary text-on-secondary font-label-md text-label-md font-bold">नाबार्ड / महा-डीबीटी योजना</span>
-<span class="font-label-md text-label-md text-secondary font-bold">४०% थेट सरकारी अनुदान (Subsidy)</span>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">calculate</span>
+<h2 class="font-mono text-[18px] font-bold text-slate-100 tracking-tight">Interactive Farm Size &amp; Hardware ROI Calculator</h2>
 </div>
-<h3 class="font-headline-lg text-headline-lg font-bold text-on-surface mt-0.5">
-            अचूक शेती तंत्रज्ञान (Precision Ag) सबसिडी सहाय्य
-          </h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-            कॉटवीड मशिन खरेदीसाठी राज्य सरकारकडून ₹ ७५,००० ते ₹ १,२०,००० पर्यंत थेट बँक खात्यात अनुदान मिळते.
-          </p>
+<p class="font-body-sm text-body-sm text-slate-400">
+  Simulate operational payback for CotWeed AI Edge Controller retrofitted onto standard tractor spray booms.
+</p>
 </div>
-</div>
-<button class="min-h-[52px] px-6 py-2.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-md hover:bg-primary-container hover:text-on-primary-container shrink-0 active:translate-y-0.5 transition-all" type="button">
-<span class="material-symbols-outlined">edit_document</span>
-<span>अनुदानाचा फॉर्म भरा (1-Click Apply)</span>
-</button>
-</div>
-<!-- 3-Step Simple Subsidy Tracker -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-4 bg-surface-container-low p-4 rounded-xl">
-<!-- Step 1 -->
-<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex items-start gap-3">
-<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-[22px]">check</span>
-</div>
-<div>
-<span class="font-label-md text-label-md font-bold text-primary">टप्पा १: पूर्ण झाले ✅</span>
-<h4 class="font-headline-md text-headline-md font-bold text-on-surface mt-0.5">शेतकरी नोंदणी (KYC)</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
-            आधार कार्ड व ७/१२ उतारा पोर्टलवर जोडला गेला आहे.
-          </p>
+<div class="inline-flex items-center gap-2 px-space-sm py-1 rounded-full bg-[#0C1524] border border-[#1E304F] font-mono text-[11px] text-slate-300">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+<span>Validated by Vidarbha Agri Consortium</span>
 </div>
 </div>
-<!-- Step 2 -->
-<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex items-start gap-3">
-<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-[22px]">description</span>
-</div>
-<div>
-<span class="font-label-md text-label-md font-bold text-primary">टप्पा २: मंजूर ✅</span>
-<h4 class="font-headline-md text-headline-md font-bold text-on-surface mt-0.5">फवारणी व बिल ऑडिट</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
-            कॉटवीड डिजिटल लॉग व जीएसटी बिल तपासणी पूर्ण.
-          </p>
-</div>
-</div>
-<!-- Step 3 -->
-<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex items-start gap-3">
-<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0 animate-pulse">
-<span class="material-symbols-outlined text-[22px]">hourglass_top</span>
-</div>
-<div>
-<span class="font-label-md text-label-md font-bold text-secondary">टप्पा ३: प्रक्रिया सुरू ⏳</span>
-<h4 class="font-headline-md text-headline-md font-bold text-on-surface mt-0.5">बँक खात्यात जमा</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
-            अपेक्षित रक्कम: <strong>₹ ७५,०००</strong> (बँक ऑफ महाराष्ट्र)
-          </p>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center pt-space-md">
+<!-- Dual Slider Controls -->
+<div class="lg:col-span-6 space-y-space-lg bg-[#070D18] border border-[#16253C] p-space-lg rounded-xl">
+<!-- Slider 1: Farm Size -->
+<div class="space-y-space-xs">
+<div class="flex justify-between items-center">
+<label class="font-mono text-[12px] font-semibold text-slate-200 uppercase tracking-wide" for="farmSizeRange">Farm Cultivation Area (Acres)</label>
+<div class="flex items-center gap-1 font-mono font-bold text-[18px] text-primary">
+<span id="farmSizeVal">25</span>
+<span class="text-body-sm text-slate-400 font-normal">Acres</span>
 </div>
 </div>
+<input class="w-full h-2 bg-[#121E33] rounded-lg appearance-none cursor-pointer border border-[#1E304F] focus:outline-none" id="farmSizeRange" max="50" min="1" type="range" value="25"/>
+<div class="flex justify-between text-slate-500 font-mono text-[10px]">
+<span>1 Acre (Smallholder)</span>
+<span>25 Acres</span>
+<span>50 Acres (Large Estate)</span>
 </div>
 </div>
-<!-- Recent Work Receipts Table (कामाचा सोपा हिशोब व पावत्या) -->
-<div class="w-full bg-surface-container-lowest rounded-2xl p-6 shadow-md mb-6">
-<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-5">
-<div>
-<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">हिशोब नोंदवही / Spray Logs</span>
-<h3 class="font-headline-lg text-headline-lg font-bold text-on-surface mt-0.5">अलिकडील कामांचा हिशोब व पावत्या</h3>
-</div>
-<div class="flex items-center gap-2">
-<button class="min-h-[48px] px-4 py-2 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md font-bold flex items-center gap-2 shadow-sm hover:bg-surface-container" onclick="printAllReceipts()" type="button">
-<span class="material-symbols-outlined text-[20px]">print</span>
-<span>सर्व पावत्या प्रिंट करा</span>
-</button>
+<!-- Slider 2: Herbicide Cost -->
+<div class="space-y-space-xs">
+<div class="flex justify-between items-center">
+<label class="font-mono text-[12px] font-semibold text-slate-200 uppercase tracking-wide" for="chemCostRange">Selective Herbicide Mixture Cost (₹ / Litre)</label>
+<div class="flex items-center gap-1 font-mono font-bold text-[18px] text-primary">
+<span>₹</span>
+<span id="chemCostVal">1,850</span>
+<span class="text-body-sm text-slate-400 font-normal">/ L</span>
 </div>
 </div>
-<!-- Receipts Card List / Table -->
-<div class="space-y-3">
-<!-- Item 1 -->
-<div class="bg-surface-container-low rounded-xl p-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
-<div class="flex items-center gap-3.5">
-<div class="w-12 h-12 rounded-xl bg-primary-fixed text-on-primary-fixed-variant flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-[26px]">agriculture</span>
+<input class="w-full h-2 bg-[#121E33] rounded-lg appearance-none cursor-pointer border border-[#1E304F] focus:outline-none" id="chemCostRange" max="3500" min="800" step="50" type="range" value="1850"/>
+<div class="flex justify-between text-slate-500 font-mono text-[10px]">
+<span>₹800/L (Generic)</span>
+<span>₹1,850/L (Pyrithiobac Sodium + Quizalofop)</span>
+<span>₹3,500/L (Specialty)</span>
+</div>
+</div>
+<!-- Field Parameter Note -->
+<div class="flex items-center gap-2 text-slate-400 font-mono text-[11px] pt-2 border-t border-[#132035]">
+<span class="material-symbols-outlined text-[16px] text-primary">tune</span>
+<span>Default model assumes 3 spray passes per Kharif cotton growth cycle.</span>
+</div>
+</div>
+<!-- Dynamic Output Cards -->
+<div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Output 1: Seasonal Savings -->
+<div class="bg-[#0C1524] border border-[#1E304F] p-space-md rounded-xl shadow-lg space-y-space-xs sm:col-span-2 relative overflow-hidden">
+<div class="absolute -top-10 -right-10 w-24 h-24 bg-primary/10 rounded-full blur-xl"></div>
+<span class="font-mono text-[10px] uppercase text-slate-400 tracking-wider font-semibold">Estimated Seasonal Net Savings</span>
+<div class="flex items-baseline gap-2">
+<span class="font-mono text-[32px] font-bold text-primary tracking-tight drop-shadow-[0_0_12px_rgba(0,255,136,0.3)]" id="displaySeasonalSavings">₹ 2,38,750</span>
+<span class="text-slate-400 font-mono text-[12px]">/ Kharif Season</span>
+</div>
+<p class="font-body-sm text-body-sm text-slate-400">Calculated on 82.6% reduced chemical consumption across 3 operational runs.</p>
+</div>
+<!-- Output 2: Payback Period -->
+<div class="bg-[#0C1524] border border-[#1E304F] p-space-md rounded-xl space-y-space-xs shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-mono text-[10px] uppercase text-slate-400 font-semibold tracking-wider">Payback Period</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">bolt</span>
+</div>
+<div class="font-mono text-[24px] font-bold text-secondary drop-shadow-[0_0_10px_rgba(0,240,255,0.3)]" id="displayPaybackDays">
+  38 Days
+</div>
+<div class="text-secondary font-mono text-[10px] font-bold">Under 1 Kharif Season</div>
+</div>
+<!-- Output 3: 3-Year Profit -->
+<div class="bg-[#0C1524] border border-[#1E304F] p-space-md rounded-xl space-y-space-xs shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-mono text-[10px] uppercase text-slate-400 font-semibold tracking-wider">3-Year Net Profit</span>
+<span class="material-symbols-outlined text-primary text-[20px]">trending_up</span>
+</div>
+<div class="font-mono text-[24px] font-bold text-primary drop-shadow-[0_0_10px_rgba(0,255,136,0.3)]" id="displayThreeYearProfit">
+  ₹ 6,15,000
+</div>
+<div class="text-primary font-mono text-[10px] font-bold">+340% Kit ROI Factor</div>
+</div>
+</div>
+</div>
+<!-- State Govt / NABARD Subsidy Banner -->
+<div class="mt-space-lg p-space-md rounded-xl bg-gradient-to-r from-[#0C182B] via-[#0E1F38] to-[#0A1424] border border-cyan-500/25 flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md shadow-[0_0_20px_rgba(0,240,255,0.08)]">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-secondary shadow-[0_0_12px_rgba(0,240,255,0.2)] flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">verified_user</span>
 </div>
 <div>
 <div class="flex items-center gap-2">
-<span class="font-headline-md text-headline-md font-bold text-on-surface">हिंगणा शेत (प्लॉट बी-२)</span>
-<span class="px-2 py-0.5 rounded bg-primary text-on-primary text-xs font-bold">पूर्ण झाले</span>
+<h3 class="font-mono text-[14px] font-bold text-slate-100">Maharashtra Govt / NABARD Precision Agriculture Subsidy</h3>
+<span class="px-2 py-0.5 rounded bg-secondary/10 border border-secondary/30 text-secondary font-mono text-[9px] font-bold tracking-wider">ACTIVE SCHEME</span>
 </div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">तारीख: १८ ऑक्टोबर २०२४ | क्षेत्र: १० एकर कापूस</p>
+<p class="font-body-sm text-body-sm text-slate-400 mt-0.5">
+  Eligible for up to 40% capital reimbursement on smart optical weed actuator kits under the Smart Ag Tech Fund.
+</p>
 </div>
 </div>
-<div class="grid grid-cols-2 sm:grid-cols-3 gap-4 items-center">
-<div>
-<span class="font-body-sm text-body-sm text-on-surface-variant block">वाचलेले औषध</span>
-<span class="font-label-lg text-label-lg font-bold text-on-surface">८४ लिटर</span>
-</div>
-<div>
-<span class="font-body-sm text-body-sm text-on-surface-variant block">खिशातली बचत</span>
-<span class="font-label-lg text-label-lg font-extrabold text-primary">₹ ३८,५००</span>
-</div>
-<div class="col-span-2 sm:col-span-1">
-<button class="w-full min-h-[44px] px-3.5 py-1.5 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 hover:bg-surface-variant" onclick="downloadSingleReceipt('पावती क्र. 1042')" type="button">
-<span class="material-symbols-outlined text-[18px]">receipt</span>
-<span>पावती डाऊनलोड</span>
+<button class="inline-flex items-center gap-2 bg-[#0C1E34] hover:bg-secondary/20 text-secondary border border-secondary/40 px-space-md py-2.5 rounded-lg font-mono text-[12px] font-bold shadow-[0_0_12px_rgba(0,240,255,0.2)] transition-all whitespace-nowrap active:scale-95 cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[18px]">download_done</span>
+<span>Prefill Subsidy Form 12-A</span>
 </button>
 </div>
 </div>
-</div>
-<!-- Item 2 -->
-<div class="bg-surface-container-low rounded-xl p-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
-<div class="flex items-center gap-3.5">
-<div class="w-12 h-12 rounded-xl bg-primary-fixed text-on-primary-fixed-variant flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-[26px]">agriculture</span>
-</div>
+</section>
+<!-- SECTION 4: Compliance & Subsidy Audit Table -->
+<section class="px-space-md lg:px-space-xl pb-space-2xl">
+<div class="bg-[#0B1320] border border-[#1A2942] rounded-xl p-space-md lg:p-space-lg shadow-[0_4px_30px_rgba(0,0,0,0.5)]">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm pb-space-md border-b border-[#142033]">
 <div>
+<h2 class="font-mono text-[18px] font-bold text-slate-100 tracking-tight">Recent Autonomous Spray Runs &amp; Subsidy Audit Log</h2>
+<p class="font-body-sm text-body-sm text-slate-400">
+  Tamper-proof telemetric logs synced directly with the Vidarbha Digital Ag Ledger for verified subsidy claims.
+</p>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="inline-flex items-center gap-1.5 px-space-sm py-2 rounded-lg bg-[#0C1524] border border-[#1E304F] text-slate-200 hover:bg-[#132035] font-mono text-[11px] transition-colors shadow-sm cursor-pointer" id="downloadCsvBtn" type="button">
+<span class="material-symbols-outlined text-[18px] text-slate-400">table_view</span>
+<span>Download Audit CSV</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-sm py-2 rounded-lg bg-[#0C1524] border border-primary/30 text-primary hover:bg-primary/10 font-mono text-[11px] font-bold transition-colors shadow-[0_0_10px_rgba(0,255,136,0.1)] cursor-pointer" id="printCertBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Print Signed Certificate</span>
+</button>
+</div>
+</div>
+<!-- Modern Data Table -->
+<div class="overflow-x-auto pt-space-xs">
+<table class="w-full text-left font-mono text-[12px]">
+<thead class="bg-[#070D18] text-slate-400 uppercase tracking-wider text-[10px] border-b border-[#16253C]">
+<tr>
+<th class="py-3 px-space-sm">Run ID</th>
+<th class="py-3 px-space-sm">Date &amp; Time</th>
+<th class="py-3 px-space-sm">Plot / Zone</th>
+<th class="py-3 px-space-sm text-right">Acres</th>
+<th class="py-3 px-space-sm text-right">Weeds Hit</th>
+<th class="py-3 px-space-sm text-right">Herbicide (L)</th>
+<th class="py-3 px-space-sm text-right">Volume Saved</th>
+<th class="py-3 px-space-sm text-center">Soil Index</th>
+<th class="py-3 px-space-sm text-center">Audit Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-[#132035]">
+<!-- Row 1 -->
+<tr class="hover:bg-[#0E1729]/70 transition-colors">
+<td class="py-3.5 px-space-sm font-mono font-bold text-primary drop-shadow-[0_0_6px_rgba(0,255,136,0.3)]">#CW-8492</td>
+<td class="py-3.5 px-space-sm text-slate-400 font-mono text-[11px]">18 Oct, 07:15 AM</td>
+<td class="py-3.5 px-space-sm font-semibold text-slate-200">Vidarbha Block-4B (North)</td>
+<td class="py-3.5 px-space-sm text-right text-slate-200">14.0</td>
+<td class="py-3.5 px-space-sm text-right text-slate-200">4,812</td>
+<td class="py-3.5 px-space-sm text-right text-slate-200">20.72 L</td>
+<td class="py-3.5 px-space-sm text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-primary/10 border border-primary/30 text-primary font-mono text-[10px] font-bold">
+  82.6%
+</span>
+</td>
+<td class="py-3.5 px-space-sm text-center">
+<span class="inline-flex items-center gap-1 font-mono text-[11px] font-bold text-secondary">
+<span class="material-symbols-outlined text-[14px]">shield</span> 9.4/10
+</span>
+</td>
+<td class="py-3.5 px-space-sm text-center">
+<button class="p-1 rounded hover:bg-[#16253C] text-slate-400 hover:text-primary transition-colors cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-[#0E1729]/70 transition-colors">
+<td class="py-3.5 px-space-sm font-mono font-bold text-primary drop-shadow-[0_0_6px_rgba(0,255,136,0.3)]">#CW-8488</td>
+<td class="py-3.5 px-space-sm text-slate-400 font-mono text-[11px]">17 Oct, 03:45 PM</td>
+<td class="py-3.5 px-space-sm font-semibold text-slate-200">Vidarbha Block-4B (South)</td>
+<td class="py-3.5 px-space-sm text-right text-slate-200">16.5</td>
+<td class="py-3.5 px-space-sm text-right text-slate-200">6,240</td>
+<td class="py-3.5 px-space-sm text-right text-slate-200">24.42 L</td>
+<td class="py-3.5 px-space-sm text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-primary/10 border border-primary/30 text-primary font-mono text-[10px] font-bold">
+  83.1%
+</span>
+</td>
+<td class="py-3.5 px-space-sm text-center">
+<span class="inline-flex items-center gap-1 font-mono text-[11px] font-bold text-secondary">
+<span class="material-symbols-outlined text-[14px]">shield</span> 9.6/10
+</span>
+</td>
+<td class="py-3.5 px-space-sm text-center">
+<button class="p-1 rounded hover:bg-[#16253C] text-slate-400 hover:text-primary transition-colors cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-[#0E1729]/70 transition-colors">
+<td class="py-3.5 px-space-sm font-mono font-bold text-primary drop-shadow-[0_0_6px_rgba(0,255,136,0.3)]">#CW-8472</td>
+<td class="py-3.5 px-space-sm text-slate-400 font-mono text-[11px]">15 Oct, 09:20 AM</td>
+<td class="py-3.5 px-space-sm font-semibold text-slate-200">Wardha Field-9 (East)</td>
+<td class="py-3.5 px-space-sm text-right text-slate-200">8.2</td>
+<td class="py-3.5 px-space-sm text-right text-slate-200">3,110</td>
+<td class="py-3.5 px-space-sm text-right text-slate-200">12.14 L</td>
+<td class="py-3.5 px-space-sm text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-primary/10 border border-primary/30 text-primary font-mono text-[10px] font-bold">
+  81.9%
+</span>
+</td>
+<td class="py-3.5 px-space-sm text-center">
+<span class="inline-flex items-center gap-1 font-mono text-[11px] font-bold text-secondary">
+<span class="material-symbols-outlined text-[14px]">shield</span> 9.2/10
+</span>
+</td>
+<td class="py-3.5 px-space-sm text-center">
+<button class="p-1 rounded hover:bg-[#16253C] text-slate-400 hover:text-primary transition-colors cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-[#0E1729]/70 transition-colors">
+<td class="py-3.5 px-space-sm font-mono font-bold text-primary drop-shadow-[0_0_6px_rgba(0,255,136,0.3)]">#CW-8461</td>
+<td class="py-3.5 px-space-sm text-slate-400 font-mono text-[11px]">14 Oct, 04:10 PM</td>
+<td class="py-3.5 px-space-sm font-semibold text-slate-200">Hingna River Plot-2A</td>
+<td class="py-3.5 px-space-sm text-right text-slate-200">12.0</td>
+<td class="py-3.5 px-space-sm text-right text-slate-200">5,030</td>
+<td class="py-3.5 px-space-sm text-right text-slate-200">17.76 L</td>
+<td class="py-3.5 px-space-sm text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-primary/10 border border-primary/30 text-primary font-mono text-[10px] font-bold">
+  82.5%
+</span>
+</td>
+<td class="py-3.5 px-space-sm text-center">
+<span class="inline-flex items-center gap-1 font-mono text-[11px] font-bold text-secondary">
+<span class="material-symbols-outlined text-[14px]">shield</span> 9.5/10
+</span>
+</td>
+<td class="py-3.5 px-space-sm text-center">
+<button class="p-1 rounded hover:bg-[#16253C] text-slate-400 hover:text-primary transition-colors cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination and Ledger Hash -->
+<div class="mt-space-md pt-space-sm flex flex-col sm:flex-row items-start sm:items-center justify-between text-slate-400 font-mono text-[11px] gap-2 border-t border-[#132035]">
 <div class="flex items-center gap-2">
-<span class="font-headline-md text-headline-md font-bold text-on-surface">विदर्भ ब्लॉक ४ (नदीकाठ)</span>
-<span class="px-2 py-0.5 rounded bg-primary text-on-primary text-xs font-bold">पूर्ण झाले</span>
+<span class="w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_#00ff88]"></span>
+<span>Ledger Block SHA-256: <code class="font-mono text-primary font-semibold">7f4d..99a2 (Vidarbha Kisan Vault)</code></span>
 </div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">तारीख: १२ ऑक्टोबर २०२४ | क्षेत्र: ८ एकर कापूस</p>
-</div>
-</div>
-<div class="grid grid-cols-2 sm:grid-cols-3 gap-4 items-center">
-<div>
-<span class="font-body-sm text-body-sm text-on-surface-variant block">वाचलेले औषध</span>
-<span class="font-label-lg text-label-lg font-bold text-on-surface">६९ लिटर</span>
-</div>
-<div>
-<span class="font-body-sm text-body-sm text-on-surface-variant block">खिशातली बचत</span>
-<span class="font-label-lg text-label-lg font-extrabold text-primary">₹ ३२,०००</span>
-</div>
-<div class="col-span-2 sm:col-span-1">
-<button class="w-full min-h-[44px] px-3.5 py-1.5 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 hover:bg-surface-variant" onclick="downloadSingleReceipt('पावती क्र. 1039')" type="button">
-<span class="material-symbols-outlined text-[18px]">receipt</span>
-<span>पावती डाऊनलोड</span>
-</button>
+<div class="flex items-center gap-1">
+<span>Displaying 4 of 24 spray records</span>
+<span class="text-slate-600">|</span>
+<a class="text-primary font-semibold hover:underline" href="#">View All Archive Logs →</a>
 </div>
 </div>
 </div>
-<!-- Item 3 -->
-<div class="bg-surface-container-low rounded-xl p-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
-<div class="flex items-center gap-3.5">
-<div class="w-12 h-12 rounded-xl bg-primary-fixed text-on-primary-fixed-variant flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-[26px]">agriculture</span>
-</div>
-<div>
-<div class="flex items-center gap-2">
-<span class="font-headline-md text-headline-md font-bold text-on-surface">बोरगाव शेत (विहीर बाजू)</span>
-<span class="px-2 py-0.5 rounded bg-primary text-on-primary text-xs font-bold">पूर्ण झाले</span>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">तारीख: ०४ ऑक्टोबर २०२४ | क्षेत्र: १५ एकर कापूस</p>
-</div>
-</div>
-<div class="grid grid-cols-2 sm:grid-cols-3 gap-4 items-center">
-<div>
-<span class="font-body-sm text-body-sm text-on-surface-variant block">वाचलेले औषध</span>
-<span class="font-label-lg text-label-lg font-bold text-on-surface">१२६ लिटर</span>
-</div>
-<div>
-<span class="font-body-sm text-body-sm text-on-surface-variant block">खिशातली बचत</span>
-<span class="font-label-lg text-label-lg font-extrabold text-primary">₹ ५७,८००</span>
-</div>
-<div class="col-span-2 sm:col-span-1">
-<button class="w-full min-h-[44px] px-3.5 py-1.5 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 hover:bg-surface-variant" onclick="downloadSingleReceipt('पावती क्र. 1024')" type="button">
-<span class="material-symbols-outlined text-[18px]">receipt</span>
-<span>पावती डाऊनलोड</span>
-</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Reassuring Farmer Bottom Notice / Co-op Verification -->
-<div class="w-full bg-surface-container-high rounded-xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-on-surface">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary text-[28px]">verified_user</span>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-        हा हिशोब महाराष्ट्र कृषी विभाग आणि कॉटवीड सेन्सरच्या थेट फील्ड डेटावर प्रमाणित आहे.
-      </p>
-</div>
-<a class="font-label-md text-label-md text-primary font-bold hover:underline shrink-0" href="tel:18001801551">
-      अधिक माहितीसाठी किसान कॉल सेंटर: १८००-१८०-१५५१
-    </a>
-</div>
-<!-- Inline Calculator and Voice Micro-Interactions -->
+</section>
+<!-- Interactive Logic Script -->
 <script>
-    function updateCalculations(acres) {
-      // Logic: Average spray saving ₹9,550 per acre in season
-      const totalSaving = acres * 9550;
-      const formattedSaving = totalSaving.toLocaleString('en-IN');
+    (function initAnalytics() {
+      // Calculator elements
+      const farmSizeRange = document.getElementById('farmSizeRange');
+      const farmSizeVal = document.getElementById('farmSizeVal');
+      const chemCostRange = document.getElementById('chemCostRange');
+      const chemCostVal = document.getElementById('chemCostVal');
+      const displaySeasonalSavings = document.getElementById('displaySeasonalSavings');
+      const displayPaybackDays = document.getElementById('displayPaybackDays');
+      const displayThreeYearProfit = document.getElementById('displayThreeYearProfit');
 
-      // Convert english digits to devanagari for farmer comfort
-      const devanagariDigits = {'0':'०','1':'१','2':'२','3':'३','4':'४','5':'५','6':'६','7':'७','8':'८','9':'९',',':','};
-      let devString = '';
-      for (let ch of formattedSaving) {
-        devString += devanagariDigits[ch] !== undefined ? devanagariDigits[ch] : ch;
+      function updateCalculator() {
+        const acres = parseFloat(farmSizeRange.value);
+        const costPerLitre = parseFloat(chemCostRange.value);
+
+        farmSizeVal.textContent = acres;
+        chemCostVal.textContent = costPerLitre.toLocaleString('en-IN');
+
+        // Calculations based on 3 passes per season:
+        // Broadcast = 8.5L/Acre * 3 passes = 25.5 L/Acre/season
+        // CotWeed = 1.48L/Acre * 3 passes = 4.44 L/Acre/season
+        // Chemical saved per acre per season = 21.06 Litres
+        const litresSavedPerAcreSeason = 21.06;
+        const totalLitresSaved = acres * litresSavedPerAcreSeason;
+        const totalSeasonalSavings = Math.round(totalLitresSaved * costPerLitre);
+
+        // Hardware Kit Retrofit net cost assumed ~ ₹1,80,000 (after baseline discount)
+        const kitCost = 180000;
+        // Operating days: Assuming 2.5 acres covered per day
+        const daysToCover = Math.max(12, Math.round((kitCost / (totalSeasonalSavings || 1)) * 45));
+
+        const threeYearProfit = Math.round((totalSeasonalSavings * 3) - kitCost);
+
+        displaySeasonalSavings.textContent = '₹ ' + totalSeasonalSavings.toLocaleString('en-IN');
+        displayPaybackDays.textContent = Math.min(daysToCover, 80) + ' Days';
+        displayThreeYearProfit.textContent = '₹ ' + (threeYearProfit > 0 ? threeYearProfit.toLocaleString('en-IN') : '95,000');
       }
 
-      const savingsDisplay = document.getElementById('savingsDisplay');
-      if (savingsDisplay) {
-        savingsDisplay.innerText = '₹ ' + devString;
+      farmSizeRange.addEventListener('input', updateCalculator);
+      chemCostRange.addEventListener('input', updateCalculator);
+
+      // SVG Chart Metric Switching Interactions
+      const toggleLitres = document.getElementById('toggleLitres');
+      const toggleCost = document.getElementById('toggleCost');
+      const toggleRunoff = document.getElementById('toggleRunoff');
+      const chartLine = document.getElementById('chartLine');
+      const chartArea = document.getElementById('chartArea');
+
+      const tabs = [toggleLitres, toggleCost, toggleRunoff];
+
+      function setActiveTab(selectedBtn) {
+        tabs.forEach(btn => {
+          btn.className = 'chart-tab-btn px-space-sm py-1.5 rounded-md text-slate-400 hover:text-slate-200 transition-all cursor-pointer';
+        });
+        selectedBtn.className = 'chart-tab-btn px-space-sm py-1.5 rounded-md bg-primary/20 text-primary border border-primary/40 font-bold shadow-[0_0_10px_rgba(0,255,136,0.2)] transition-all cursor-pointer';
       }
 
-      const sliderText = document.getElementById('sliderValueText');
-      if (sliderText) {
-        let acreStr = acres.toString();
-        let devAcre = '';
-        for (let ch of acreStr) {
-          devAcre += devanagariDigits[ch] !== undefined ? devanagariDigits[ch] : ch;
-        }
-        sliderText.innerText = devAcre + ' एकर';
-      }
-    }
-
-    function setAcre(acres, btnElement) {
-      document.querySelectorAll('.acre-btn').forEach(btn => {
-        btn.classList.remove('bg-primary', 'text-on-primary');
-        btn.classList.add('bg-surface-container', 'text-on-surface');
+      toggleLitres.addEventListener('click', () => {
+        setActiveTab(toggleLitres);
+        chartLine.setAttribute('d', 'M 0,182 Q 70,170 140,176 T 280,185 T 420,172 T 560,180 T 700,174');
+        chartArea.setAttribute('d', 'M 0,182 Q 70,170 140,176 T 280,185 T 420,172 T 560,180 T 700,174 L 700,200 L 0,200 Z');
       });
-      if (btnElement) {
-        btnElement.classList.add('bg-primary', 'text-on-primary');
-        btnElement.classList.remove('bg-surface-container', 'text-on-surface');
-      }
-      const slider = document.getElementById('acreSlider');
-      if (slider) slider.value = acres;
-      updateCalculations(acres);
-    }
 
-    function onSliderChange(value) {
-      document.querySelectorAll('.acre-btn').forEach(btn => {
-        btn.classList.remove('bg-primary', 'text-on-primary');
-        btn.classList.add('bg-surface-container', 'text-on-surface');
+      toggleCost.addEventListener('click', () => {
+        setActiveTab(toggleCost);
+        // Slightly different curvature to mimic cost telemetry
+        chartLine.setAttribute('d', 'M 0,165 Q 70,160 140,168 T 280,162 T 420,158 T 560,165 T 700,160');
+        chartArea.setAttribute('d', 'M 0,165 Q 70,160 140,168 T 280,162 T 420,158 T 560,165 T 700,160 L 700,200 L 0,200 Z');
       });
-      updateCalculations(parseInt(value, 10));
-    }
 
-    let isSpeaking = false;
-    function toggleSpeech() {
-      const voiceBtn = document.getElementById('voiceBtn');
-      if (!('speechSynthesis' in window)) {
-        alert('आपल्या फोनवर ऑडिओ उपलब्ध नाही. (Speech synthesis not supported)');
-        return;
-      }
-      if (isSpeaking) {
-        window.speechSynthesis.cancel();
-        isSpeaking = false;
-        voiceBtn.innerHTML = '<span class="material-symbols-outlined" style="font-variation-settings: \'FILL\' 1;">play_circle</span><span>मराठीत ऐका (Listen)</span>';
-        return;
-      }
-      const textToSpeak = 'राम राम शेतकरी बंधूंनो! कॉटवीड फवारणीमुळे आजपर्यंत तुमच्या शेतात एकूण एक लाख चौऱ्यांशी हजार तीनशे वीस रुपयांची औषध बचत झाली आहे. ८२ टक्के औषध वाचले असून कापसाचे पीक शंभर टक्के निरोगी आहे.';
-      const utterance = new SpeechSynthesisUtterance(textToSpeak);
-      utterance.lang = 'mr-IN';
-      utterance.rate = 0.9;
-      utterance.onend = () => {
-        isSpeaking = false;
-        voiceBtn.innerHTML = '<span class="material-symbols-outlined" style="font-variation-settings: \'FILL\' 1;">play_circle</span><span>मराठीत ऐका (Listen)</span>';
-      };
-      window.speechSynthesis.speak(utterance);
-      isSpeaking = true;
-      voiceBtn.innerHTML = '<span class="material-symbols-outlined" style="font-variation-settings: \'FILL\' 1;">pause_circle</span><span>आवाज सुरू आहे... (थांबवा)</span>';
-    }
+      toggleRunoff.addEventListener('click', () => {
+        setActiveTab(toggleRunoff);
+        // Flatter line indicating near zero runoff
+        chartLine.setAttribute('d', 'M 0,192 Q 70,190 140,193 T 280,191 T 420,189 T 560,192 T 700,190');
+        chartArea.setAttribute('d', 'M 0,192 Q 70,190 140,193 T 280,191 T 420,189 T 560,192 T 700,190 L 700,200 L 0,200 Z');
+      });
 
-    function downloadQuotation() {
-      alert('बँक व अनुदानाचे अधिकृत कोटेशन डाऊनलोड झाले आहे! (Quotation Downloaded)');
-    }
-
-    function downloadSingleReceipt(receiptName) {
-      alert(receiptName + ' ची अधिकृत पावती डाऊनलोड झाली आहे.');
-    }
-
-    function printAllReceipts() {
-      window.print();
-    }
+      // Quick export triggers
+      document.getElementById('exportPdfBtn').addEventListener('click', () => {
+        alert('Generating Nagpur RISE Compliance PDF: Block-4B Kharif Report...');
+      });
+      document.getElementById('downloadCsvBtn').addEventListener('click', () => {
+        alert('Downloading verified spray logs (.CSV) with telemetry hashes...');
+      });
+      document.getElementById('printCertBtn').addEventListener('click', () => {
+        window.print();
+      });
+    })();
   </script>
 </div></main></div></body></html>
-
-
-<script>
+<script id="router">
 document.addEventListener("DOMContentLoaded", function() {
     const links = document.querySelectorAll('a');
     links.forEach(link => {
@@ -562,11 +691,14 @@ document.addEventListener("DOMContentLoaded", function() {
             const text = link.innerText.toLowerCase();
             const dataPath = link.getAttribute('data-path') || '';
             
-            let targetUrl = 'index.html';
-            if (text.includes('roi') || dataPath.includes('roi') || text.includes('बचत') || text.includes('हिशोब')) {
+            let targetUrl = 'index.html'; // Default to main
+            
+            if (text.includes('roi') || dataPath.includes('roi')) {
                 targetUrl = 'analytics.html';
-            } else if (text.includes('machine view') || text.includes('operations') || text.includes('फवारणी') || dataPath.includes('operations-center')) {
+            } else if (text.includes('machine view') || text.includes('operations') || dataPath.includes('operations-center')) {
                 targetUrl = 'ops_center.html';
+            } else if (text.includes('edge') || text.includes('calibration') || dataPath.includes('edge')) {
+                targetUrl = 'edge.html';
             }
             window.location.href = targetUrl;
         });

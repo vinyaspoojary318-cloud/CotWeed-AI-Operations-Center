@@ -717,7 +717,8 @@ EXPORT JSON
 </script></main></div></body></html>
 
 
-<script>
+
+<script id="router">
 document.addEventListener("DOMContentLoaded", function() {
     const links = document.querySelectorAll('a');
     links.forEach(link => {
@@ -726,11 +727,14 @@ document.addEventListener("DOMContentLoaded", function() {
             const text = link.innerText.toLowerCase();
             const dataPath = link.getAttribute('data-path') || '';
             
-            let targetUrl = 'index.html';
-            if (text.includes('roi') || dataPath.includes('roi') || text.includes('बचत') || text.includes('हिशोब')) {
+            let targetUrl = 'index.html'; // Default to main
+            
+            if (text.includes('roi') || dataPath.includes('roi')) {
                 targetUrl = 'analytics.html';
-            } else if (text.includes('machine view') || text.includes('operations') || text.includes('फवारणी') || dataPath.includes('operations-center')) {
+            } else if (text.includes('machine view') || text.includes('operations') || dataPath.includes('operations-center')) {
                 targetUrl = 'ops_center.html';
+            } else if (text.includes('edge') || text.includes('calibration') || dataPath.includes('edge')) {
+                targetUrl = 'edge.html';
             }
             window.location.href = targetUrl;
         });
